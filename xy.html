@@ -1,0 +1,146 @@
+<html>
+    <head>
+    <style>
+        .night 
+        {
+            width:1500px;
+            height:450px;
+            background-color:black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            animation-name: nit;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            /* z-index: -4; */
+        }
+        .morning 
+        {
+            width:1500px;
+            height:450px;
+            background-color:orange;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            z-index: -1;
+            animation-name: mrg;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            
+        }
+        .moon 
+        {
+            width:99px;
+            height:99px;
+            border-radius: 59px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* z-index: 0; */
+            position: relative;
+            top:53px;
+            background-color: aliceblue;
+            animation-name: mymoon;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        .sun
+        {
+            width:99px;
+            height:99px;
+            border-radius: 59px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* z-index: 0; */
+            background-color: yellow;
+            position: relative;
+            top:-53px;
+            animation-name: mysun;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        
+         @keyframes mysun
+        {
+            0%
+            {
+                transform: rotate(0deg) translateX(200px);
+            }
+            25%
+            {
+                transform: rotate(90deg) translateX(200px);
+            }
+            50%
+            {
+                transform: rotate(180deg) translateX(200px);
+            }
+            75%
+            {
+                transform: rotate(270deg) translateX(200px);
+            }
+            100%
+            {
+                transform: rotate(360deg) translateX(200px);
+            }
+        }
+        @keyframes mymoon
+        {
+            0%
+            {
+                transform: rotate(0deg) translateX(-200px);
+            }
+            25%
+            {
+                transform: rotate(90deg) translateX(-200px);
+            }
+            50%
+            {
+                transform: rotate(180deg) translateX(-200px);
+            }
+            75%
+            {
+                transform: rotate(270deg) translateX(-200px);
+            }
+            100%
+            {
+                transform: rotate(360deg) translateX(-200px);
+            }
+        }
+        @keyframes mrg 
+        {
+            0%
+            {
+                background: linear-gradient(to top black,grey,white);
+            }
+            50%
+            {
+                background: linear-gradient(to bottom orange,yellow,red,black);
+            }
+        }
+        @keyframes nit
+        {
+            0%
+            {
+
+                background: linear-gradient(to top orange,yellow,red,black);
+            }
+            50%
+            {
+                background: linear-gradient(to bottom black,grey,white);
+            }
+            
+         } 
+    </style>
+    </head>
+    <body>
+        <div class="night">
+        <div class="moon"></div></div>
+        <div class="morning">
+        <div class="sun"></div></div>
+     </body>
+        
+    </body>
+</html>

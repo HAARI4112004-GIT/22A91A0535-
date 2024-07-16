@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <style>
+            body{
+                width:100%;
+                height:100svh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            /* .earth
+            {
+                width:223px;
+                height:223px;
+                border-radius: 129px;
+                background-color: aqua;
+                position:relative;
+                top:-99px;
+                left:680px;
+            } */
+            .night 
+            {
+                width:100%;
+                height:50%;
+                /* display: flex;
+                justify-content: center;
+                align-items: end; */
+                /* background-color: black; */
+                animation-name: nit;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            .morning
+            {
+                width:100%;
+                height:50%;
+                /* background-color: orange; */
+                /* position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: start; */
+                animation-name: mrg;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+                
+            }
+            .moon 
+            {
+                width:99px;
+                height:99px;
+                border-radius: 59px;
+                position: absolute;
+                background-color: aliceblue;
+                animation-name: mymoon;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            .sun 
+            {
+                width:99px;
+                height:99px;
+                border-radius: 59px;
+                position: absolute;
+                background-color: rgb(244, 14, 14);
+                animation-name: mysun;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes mymoon
+            {
+                0%
+                {
+                    transform:rotate(0deg) translateX(270px);
+                }
+                25%
+                {
+                    transform:rotate(90deg) translateX(270px);
+                }
+                50%
+                {
+                    transform:rotate(180deg) translateX(270px);
+                    
+                }
+                75%
+                {
+                    transform:rotate(270deg) translateX(270px);
+                    
+                }
+                100%
+                {
+                    transform:rotate(360deg) translateX(270px);
+                    
+                }
+            }
+            @keyframes mysun
+            {
+                0%
+                {
+                    transform:rotate(0deg) translateX(-270px);
+                }
+                25%
+                {
+                    transform:rotate(90deg) translateX(-270px);
+                }
+                50%
+                {
+                    transform:rotate(180deg) translateX(-270px);
+                    
+                }
+                75%
+                {
+                    transform:rotate(270deg) translateX(-270px);
+                    
+                }
+                100%
+                {
+                    transform:rotate(360deg) translateX(-270px);
+                    
+                }
+            } 
+        @keyframes mrg 
+        {
+            0%
+            {
+                background-color: black;
+                /* background-color: linear-gradient(to top black,grey,white); */
+            }
+            100%
+            {
+                background-color: orange;
+                /* background-color: linear-gradient(to bottom orange,yellow,red,black); */
+            }
+        }
+        @keyframes nit 
+        {
+            0%
+            {
+                background-color: orange;
+                /* background: linear-gradient(to top orange,yellow,red,black); */
+            }
+            100%
+            {
+                background-color: black;
+                /* background: linear-gradient(to bottom black,grey,white); */
+            }
+            
+         } 
+        </style> 
+    </head>
+    <body>
+        <div class="night"></div>
+        <div class="morning"></div>
+        <div class="moon"></div>
+        <div class="sun"></div>
+        <div class="earth"></div>
+       
+    </body>
+</html>

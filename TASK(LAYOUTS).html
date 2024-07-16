@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="TASK(LAYOUTS).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bar">
+        <div class="search">
+            <div class="logo">L O G O</div>
+            <div class="menu" ><i class="fa-solid fa-bars" onclick="fun()"></i>
+                <div class="options">
+                    <div class="option">HOME</div>
+                    <div class="option">ABOUT</div>
+                    <div class="option">CONTACT</div>
+                    <div class="option">SUPPORT</div>
+                    <div class="option" onclick="fun2()">CLOSE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first">
+        <div class="web"><B>MOBILE APP DEVELOPMENT</B></div>
+        <div class="box">
+            <div class="b1">
+                <div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                <div class="font">STRATEGY</div>
+            </div>
+            <div class="b1">
+                <div class="icon"><i class="fa-brands fa-figma"></i></div>
+                <div class="font">UX DESIGN</div>
+            </div>
+            <div class="b1">
+                <div class="icon"><i class="fa-regular fa-file-code"></i></div>
+                <div class="font">DEVELOPMENT</div>
+            </div>
+            <div class="b1">
+                <div class="icon"><i class="fa-solid fa-bug"></i></div>
+                <div class="font">TESTING</div>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="head">
+            <div class="h1"><b>We create super-awesome designs</b></div>
+            <div class="h2">
+                <p>A web application or web app is a software application that can be accessible via a web browser or a
+                    web-enabled device, such as a smartphone or tablet.</p>
+            </div>
+            <div class="div">
+                <div class="tick">
+                    <div class="mark"><i class="fa-solid fa-check"></i></div>
+                    <div class="name">Amazing Writng</div>
+                    <div class="mat">sample test.click to select the text box.<br>click or double tap to start editing
+                        the text</div>
+                </div>
+                <div class="tick">
+                    <div class="mark"><i class="fa-solid fa-check"></i></div>
+                    <div class="name">CopyWriting</div>
+                    <div class="mat">sample test.click to select the text box.<br>click or double tap to start editing
+                        the text</div>
+                </div>
+                <div class="tick">
+                    <div class="mark"><i class="fa-solid fa-check"></i></div>
+                    <div class="name">Development</div>
+                    <div class="mat">sample test.click to select the text box.<br>click or double tap to start editing
+                        the text</div>
+                </div>
+                <div class="tick">
+                    <div class="mark"><i class="fa-solid fa-check"></i></div>
+                    <div class="name">24/7 support</div>
+                    <div class="mat">sample test.click to select the text box.<br>click or double tap to start editing
+                        the text</div>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <div class="que">
+                <div class="a1"><b>Why choose UX studio as your app design partner?</b></div>
+                <div class="a2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                </div>
+                <div class="a3">LEARN MORE</div>
+            </div>
+            <div class="img"></div>
+            <div class="div4">
+                <div class="circle"></div>
+                <div class="mob"></div>
+            </div>
+            <div class="about">
+                <div class="a4">A&nbsp;B&nbsp;O&nbsp;U&nbsp;T&nbsp;&nbsp;U&nbsp;S&nbsp;</div>
+                <div class="a5"><B>Build Your Own Website Today</B></div>
+                <div class="a6">
+                    <p>Mobile apps are built for different operating systems, like iOS and Android. By leveraging the
+                        built-in features of smartphones, apps offer an enhanced user experience compared to mobile web
+                        browsing.</p>
+                </div>
+                <div class="a7">Read More</div>
+                <div class="a8">
+                    <details>
+                        <summary></i>support via e-mailand phone</summary>
+                    </details>
+                    <details>
+                        <summary></i>Multi-Language support</summary>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="forth">
+            <div class="phone"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="last"><b>Let's get Started?</b></div>
+            <div class="last1">Do u have any project idea in mind<br>contact us today for free consultation</div>
+            <div class="last2">Contact Us</div>
+        </div>
+    </div>
+
+    <script>
+        function fun() {
+            var x = document.getElementsByClassName("options")[0];
+            x.style.width = "220px";
+            // x.style.display = "flex";
+            for (var i = 0; i < 5; i++) {
+                var y = document.getElementsByClassName("option")[i];
+                y.style.display = "inline-block";
+            }
+
+        }
+        function fun2() {
+            var x = document.getElementsByClassName("options")[0];
+            console.log(x);
+            x.style.width = "0px";
+            for (var i = 0; i < 5; i++) {
+                var y = document.getElementsByClassName("option")[i];
+                y.style.display = "none";
+                console.log(y);
+            }
+        }
+    </script>
+</body>
+
+</html>

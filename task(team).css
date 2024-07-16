@@ -1,0 +1,261 @@
+/* body
+{
+    width:100%;
+    height:88svh;
+} */
+.third
+{
+    /* width:100%;
+    height:88svh;
+    background-color:purple; */
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    justify-content: space-evenly;
+    position:relative;
+    
+}
+.third_img
+{
+    width:322px;
+    height:500px;
+    background-color: aqua;
+    background-image: url("images/anime.png");
+    background-size: 100% 100%;
+    animation-name: imgx;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgx
+{
+    0%
+    {
+        transform: translateY(23px) scaleX(12px);
+    }
+    12%
+    {
+        transform: translateY(15px) scaleX(12px);
+    }
+    25%
+    {
+        transform: translateY(0px) scaleX(12px);
+    }
+    50%
+    {
+        transform: translateY(0px);
+    }
+    75%
+    {
+        transform: translateY(15px);
+    }
+    100%
+    {
+        transform: translateY(23px);
+    }
+}
+
+.third_con
+{
+    width:776px;
+    height:470px;
+    /* background-color: chartreuse; */
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+}
+.third_tech
+{
+    color:blue;
+    /* font-size: 12px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.third_vir
+{
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+.third_some
+{
+    width:70%;
+    height:22%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.third_under
+{
+    width:67%;
+    height:0px;
+    border:1px solid black;
+}
+.third_opt 
+{
+    width:645px;
+    height:118px;
+    /* background-color: black; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.third_ab
+{
+    width:600px;
+    height:100px;
+    /* background-color: rgb(3, 3, 86); */
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    /* justify-content:start; */
+    justify-content: space-evenly;
+}
+.third_icon
+{
+    width:46px;
+    height:46px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -79%;
+}
+.third_icon1
+{
+    width:33px;
+    height: 33px;
+    background-image: url("images/bulb.png");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    /* margin-left: -79%; */
+}
+.third_icon2
+{
+    width:33px;
+    height: 33px;
+    background-image: url("images/voice.png");
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+.third_mat
+{
+    width:333px;
+    height:55px;
+    /* background-color: brown; */
+    position: absolute;
+    margin-left: -18%;
+    margin-top: -1%;
+}
+.part4_heaader{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+    gap:15px;
+    margin-bottom: 90px;
+    margin-top: 90px;
+    
+     
+ }
+ .part4_innerheader{
+     font-size: 50px;
+     color:blue;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+ }
+ .part4_smallheader{
+     font-size: 14px;
+     color:black;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+ }
+ .part4_div
+ {
+    width:66%;
+    height:60%;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:12px;
+ }
+ .part4_div1
+ {
+    width:86%;
+    height:17%;
+    background-color:#F2F2F2;
+    color: black;
+    margin : 8px 0px;
+    display: flex;
+    align-items: center;
+ }
+ .part4_div2
+ {
+    width:86%;
+    height:17%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+ }
+ .part4_div3
+ {
+    width:86%;
+    height:10%;
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+ }
+ .part4_one
+ {
+    color:blue;
+    font-size: 32px;
+ }
+ .part4_two
+ {
+    color:blue;
+    font-size: 32px;
+ }
+ .part4_three
+ {
+    color:blue;
+    font-size: 32px;
+ }
+.part4_div1:hover
+{
+    background-color: blue;
+    color:azure;
+}
+.part4_one:hover
+ {
+    color:white;
+ }
+ .part4_div2:hover
+{
+    background-color: blue;
+    color:azure;
+}
+.part4_two:hover
+ {
+    color:white;
+ }
+ .part4_div3:hover
+{
+    background-color: blue;
+    color:azure;
+}
+.part4_three:hover
+ {
+    color:white;
+ }
+.part4_empty
+{
+    width:1px;
+    height:34px;
+    background-color: #E5E5E5 ;
+}

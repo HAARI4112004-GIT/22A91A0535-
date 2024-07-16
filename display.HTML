@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            .main
+            {
+                width:100%;
+                height:100%;
+                background-color: skyblue;
+                display:grid;
+                grid-template-columns: 27fr 56fr 27fr 27fr ;
+                grid-template-rows: 7fr 7fr 7fr 7fr ;
+                /* flex-direction: column-reverse; */
+                /* justify-content:center;
+                align-items:center; */
+                /* column-gap:62px; */
+                /* gap:0px 0px; */
+                /* justify-content:; */
+                /* flex-wrap: ; */
+
+            }
+            .sub
+            {
+                width:120px;
+                height:150px;
+                text-decoration-line: underline;
+                border:2px solid black;
+                background-color: pink;
+                color:black;
+            }
+            #child
+            {
+                align-self:flex-end;
+                justify-self:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="sub">1</div>
+            <div class="sub">2</div>
+            <div class="sub">3</div>
+            <div class="sub">4</div>
+            <div class="sub" id="child">5</div>
+            <div class="sub">1</div>
+            <div class="sub">2</div>
+            <div class="sub">3</div>
+            <div class="sub">4</div>
+            <div class="sub">5</div>
+        </div>
+    </body>
+</html>

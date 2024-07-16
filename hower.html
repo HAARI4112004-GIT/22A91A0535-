@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            .parent{
+                position:relative;
+            }
+            .child1
+            {
+                width:fit-content;
+                height:fit-content;
+                color:white;
+                font-size:22px;
+                background-color: pink;
+                border-radius: 17px;
+                position:absolute;
+            }
+            .child2
+            {
+                width:fit-content;
+                height:fit-content;
+                font-size:32px;
+                position:absolute;
+                top:50px;
+                display:none;
+            }
+          
+            .parent:hover .child2
+            {
+                display:block;
+                cursor: pointer;
+            }
+            .child2 p:hover
+            {
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child1">
+            <p>HOVER ME </p>
+            </div>
+            <div class="child2">   
+            <p>option 1</p>
+            <p>option 2</p>
+            <p>option 3</p>
+            <p>option 4</p>              
+            </div>
+        </div>
+    </body>
+</html>

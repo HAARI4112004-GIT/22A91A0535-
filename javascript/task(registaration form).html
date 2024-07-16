@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .ab
+            {
+                width:70%;
+                height:50svh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-image: linear-gradient(aqua,aquamarine);
+                border-radius: 22px;
+                padding-left: 12px;
+            }
+            .btn
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            button
+            {
+                width:118px;
+                height:32px;
+                background-color: aqua;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+        <script>
+            var  obj = {
+                firstname:" ",
+                lastname:"",
+                age:0,
+                gender:"",
+                branch:"",
+                address:"",
+                mobile:""
+            }
+            function fun(data)
+            {
+                obj.firstname =  data;
+            }
+            function fun1(data)
+            {
+                obj.lastname = data;
+            }
+            function age(data)
+            {
+                obj.age = data;
+            }
+            function gender(data)
+            {
+                obj.gender = data;
+            }
+            function branch(data)
+            {
+                obj.branch = data;
+            }
+            function address(data)
+            {
+                obj.address= data;
+            }
+            function mob(data)
+            {
+                obj.mobile = data;
+            }
+        function submit(event)
+        {
+            console.log(obj);
+        }
+            
+        </script>
+    </head>
+    <body>
+       <div class="ab">
+       <label>FIRST &nbsp;&nbsp;NAME:&nbsp;&nbsp;<input  placeholder="first name" type="text" onchange="fun(this.value)"  ></label>
+       <label>SECOND &nbsp;&nbsp;NAME:&nbsp;&nbsp;<input placeholder="second name"  type="text" onchange="fun1(this.value)"  ></label> 
+       <label>AGE:&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="age"  type="number" onchange="age(this.value)"  ></label>
+       <label>GENDER:&nbsp;&nbsp;&nbsp;<input type="radio" name="m"  value="male" onchange="gender(this.value)">MALE <input type="radio" value="female" name="m" onchange="gender(this.value)">FEMALE</label>
+       <label>BRANCH:&nbsp;&nbsp;<select onchange="branch(this.value)" >
+        <option>select</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="CIVIL">CIVIL</option>
+        </select></label>
+       <label>ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;<textarea placeholder="address" onchange="address(this.value)"  ></textarea></label>
+       <label>MOBILE&nbsp;&nbsp;<input placeholder="MOBILE"  type="text" onchange="mob(this.value)"  ></label> 
+       <div class="btn" onclick="submit(event)"><button>SUBMIT</button></div>
+       </div>
+       
+    </body>
+</html>

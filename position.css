@@ -1,0 +1,24 @@
+.hello
+{
+    width: 60%;
+    height: 70%;
+    border:2px solid black;
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+    align-items:right;
+    background-color: aqua;
+    position:sticky;
+    top:122px;
+    left:333px;
+}
+.hi
+{
+    width: 45px;
+    height: 45px;
+    background-color:blue;
+    position:absolute;
+    /* position:sticky; fixed;relative;  */
+    top: 0px;
+    left: 0px;
+}

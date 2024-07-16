@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./task(resume).css">
+        <script src="./task(resume).js"></script>
+    </head>
+    <body>
+        <div class="full">
+            <center><div class="head">RESUME</div></center>
+            <label>FIRST NAME : <input type="text" onchange="first(event)"></label>
+            <label>LAST NAME :<input type="text" onchange="last(event)"></label>
+            <label> DOB : <input type="date" onchange="dob(event)"></label>
+            <label>AGE :  <input type="number" onchange="age(event)"></label>
+            <label>FATHER NAME : <input type="text" onchange="father(event)"></label>
+            <label>MOTHER NAME : <input type="text" onchange="mother(event)"></label>
+            <label>ADDRESS : <textarea onchange="address(event)"></textarea></label>
+            <label>GENDER <input type="radio"  name="m" value="male"onchange="gender(event)">MALE <input type="radio"  name="m" value="female"onchange="gender(event)">FEMALE</label>
+            <label>CERTIFICATIONS : <textarea onchange="certi(event)"></textarea></label>
+            <table border="2px" cellspacing="0">
+                <tr>
+                    <th>STUDY</th>
+                    <TH>YEAR OF PASSING</TH>
+                    <th>PERCENTAGE</th>
+                    <th>PLACE</th>
+                </tr>
+                <tr>
+                    <th>SSC</th>
+                    <td><center><select onchange="ac1(event)"><option></option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option></select></center></td>
+                    <td><input type="text" onchange="ac2(event)"></td>
+                    <td><input type="text" onchange="ac3(event)"></td>
+                </tr>
+                <tr>
+                    <th>INTERMIDIATE</th>
+                    <td><center><select onchange="ac4(event)"><option></option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option></select></center></td>
+                    <td><input type="text" onchange="ac5(event)"></td>
+                    <td><input type="text" onchange="ac6(event)"></td>
+                </tr>
+                <tr>
+                    <th>B.TECH</th>
+                    <td><center><select onchange="ac7(event)"><option></option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option></select></center></td>
+                    <td><input type="text" onchange="ac8(event)"></td>
+                    <td><input type="text" onchange="ac9(event)"></td>
+                </tr>
+            </table>
+            <div class="head1">ACADEMIC DETAILS :</div>
+            <label>SKILLS : <input type="text" onchange="skills(event)"></label>
+            <label>HOBBIES : <input type="text" onchange="hobbies(event)"></label>
+            <label>PROFILE PIC : <input type="file" onchange="pic(event)"></label>
+            <label>BADGES : <input type="text" onchange="badge(event)"></label>
+            <label>DESCRIPTION : <textarea onchange="desc(event)"></textarea></label>
+            <div class="button"onclick="submit(event)">SUBMIT</div>
+        </div>
+    </body>
+</html>

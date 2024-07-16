@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <style>
+            body 
+            {
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            } 
+            .earth
+            {
+                width:369px;
+                height:299px;
+                border-radius: 145px;
+                background-color:black;
+                background-image: url("images/Pictures/earth.png");
+                background-size: 100% 100%;
+                position: fixed;
+            }
+            .moon 
+            {
+                width:145px;
+                height:145px;
+                border-radius: 89px;
+                background-image: linear-gradient(white,rgb(184, 179, 179),grey ,black);
+                box-shadow: 2px 2px 40px 10px snow;
+                /* transform: rotate(45deg) translateX(300px); */
+                animation-name: mymoon;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes mymoon
+            {
+                0%
+                {
+                    transform: rotate(0deg) translateX(250px);
+                }
+                100%
+                {
+                    transform: rotate(360deg) translateX(250px);
+                }
+            }
+                /* 0%
+                {
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                }
+                12%
+                {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                }
+                24%
+                {
+                    display: flex;
+                    justify-content: start;
+                    align-items: end;
+                }
+                36%
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
+                48%
+                {
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+
+                }
+                62%
+                {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;  
+                }
+                74%
+                {
+                    display: flex;
+                    justify-content: end;
+                    align-items: start; 
+                }
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="earth"></div>
+        <div class="moon"></div>
+
+    </body>
+</html>

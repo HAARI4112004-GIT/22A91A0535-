@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    
+    <style>
+        #myTable
+        {
+            display: none;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            background-color: blanchedalmond;
+            
+        }
+        th
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            background-color: rgb(247, 150, 5);
+        }
+        .ab 
+        {
+            background-color: rgb(113, 113, 233);
+            position: relative;
+            top:22px;
+            left:423px;
+            display: none;
+        }
+        .abx
+        {
+            background-color: rgb(113, 113, 233);
+            position: relative;
+            /* top:22px; */
+            left:423px;
+            display: block;
+            
+        }
+        button 
+{
+    width:144px;
+    height:48px;
+    background-color:seagreen;
+    border-radius: 15px;
+}
+input
+{
+    width:100%;
+    height:100%;
+    background-color: antiquewhite;  
+    border:0px solid antiquewhite;
+}
+    </style>
+</head>
+<body>
+    <button class="abx" onclick="hey()">Click to create table!!</button>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ROLL</th>
+                <th>BRANCH</th>
+                <th>GRADE</th>
+                <th>EDIT</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+    <button  class="ab" id="addRowBtn">Add</button>
+    <script src="script.js"></script>
+</body>
+</html>

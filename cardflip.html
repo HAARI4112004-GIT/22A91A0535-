@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            
+            .main
+            {
+                width:400px;
+                height:390px;
+                border-radius: 22px;
+                position: relative;
+                perspective: 500px;
+                /* transition: all 1s;  */
+                transform-style: preserve-3d;
+                transition: all 1s;     
+                
+            }
+            .main:hover
+            {
+                transform:rotate(180deg) rotatex(180deg);
+                            
+                
+            }
+            .card1
+            {
+                width:400px;
+                height:390px;
+                border-radius: 22px;
+                background-image: url("images/Pictures/smile.jpeg");
+                background-size: 100% 100%;
+                position: absolute;
+                overflow: hidden;
+                backface-visibility: hidden;
+            }
+            
+            .card2
+            {
+                width:400px;
+                height:390px;
+                border-radius: 22px;
+                font-size:30px;
+                position: absolute;
+                display: flex;
+                flex-direction:column ;
+                justify-content: center;
+                align-items: center;
+                transform: rotateY(180deg); 
+                backface-visibility: hidden;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <!-- <div class="parent"> -->
+        <div class="main">
+            <div class="card1"></div>
+            <div class="card2">
+                <div class="h1">&nbsp; D D &nbsp;</div>
+                <div class="h1">design your dream home...</div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </body>
+</html>

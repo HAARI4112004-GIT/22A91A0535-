@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <style>
+            .clock
+            {
+                width:495px;
+                height:495px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* position: absolute; */
+                background-image: url("images/Pictures/clock.png");
+                background-size: 100% 100%;
+                border:2px solid white;
+                /* box-shadow: 2px 2px 18px 6px grey; */
+                /* z-index: 2; */
+            }
+            /* .curved-text
+            {
+                position:relative;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                display:inline-block;
+                margin:0 auto;
+                font-size:2em;
+            }
+            .curved-text span
+            {
+                min-width:0.5em;
+                text-align:center;
+                padding:30px;
+                margin:0px;
+            } */
+            .hand 
+            {
+                width:19px;
+                height:198px;
+                position: absolute;
+                /* transform-origin:center left; */
+                display: flex;
+                justify-content: center; 
+                align-items: start;
+            }
+            .h1 
+            {
+                height:110px;
+                width: 2px;
+                box-shadow: 2px 2px 8px 0px  green;
+                background-color: green;
+                transform-origin:100% 92%;
+                border-radius: 8px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                animation-name: seconds;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+
+            }
+            .h2 
+            {
+                height:110px;
+                width: 4px;
+                background-color: red;
+                box-shadow: 2px 2px 8px 0px  red;
+                border-radius: 8px;
+                transform-origin:100% 92%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                animation-name: minutes;
+                animation-duration: 3600s;
+                animation-iteration-count: infinite;
+            }
+            .h3 
+            {
+                height:110px;
+                width: 6px;
+                background-color:blue;
+                box-shadow: 2px 2px 8px 0px  blue;
+                border-radius: 8px;
+                transform-origin:100% 92%;
+                animation-name: minutes;
+                animation-duration: 43200s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes seconds
+            {
+                0%
+                {
+                    transform:rotate(0deg)translateX(0px);
+                    
+                }
+                25%
+                {
+                    transform:rotate(90deg)translateX(0px);  
+                }
+                50%
+                {
+                    transform:rotate(180deg)translateX(0px);  
+                }
+                75%
+                {
+                    transform:rotate(270deg)translateX(0px);  
+                }
+                100%
+                {
+                    transform:rotate(360deg)translateX(0px);  
+                }
+            }
+            @keyframes minutes
+            {
+                0%
+                {
+                    transform:rotate(0deg)translateX(0px);
+                }
+                25%
+                {
+                    transform:rotate(90deg)translateX(0px);  
+                }
+                50%
+                {
+                    transform:rotate(180deg)translateX(0px);  
+                }
+                75%
+                {
+                    transform:rotate(270deg)translateX(0px);  
+                }
+                100%
+                {
+                    transform:rotate(360deg)translateX(0px);  
+                }
+            }
+            @keyframes hours
+            {
+                0%
+                {
+                    transform:rotate(0deg)translateX(0px);
+                }
+                25%
+                {
+                    transform:rotate(90deg)translateX(0px);  
+                }
+                50%
+                {
+                    transform:rotate(180deg)translateX(0px);  
+                }
+                75%
+                {
+                    transform:rotate(270deg)translateX(0px);  
+                }
+                100%
+                {
+                    transform:rotate(360deg)translateX(0px);  
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clock">
+            <div class="hand"><div class="h1"></div></div>
+            <div class="hand"><div class="h2"></div></div>
+            <div class="hand"><div class="h3"></div></div>
+        </div>
+    </body>
+</html>

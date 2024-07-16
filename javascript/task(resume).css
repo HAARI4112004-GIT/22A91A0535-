@@ -1,0 +1,68 @@
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full
+{
+    width:48%;
+    height:140svh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    /* border:4px solid blue; */
+    background: linear-gradient(to left top,rgb(2, 244, 163),rgb(73, 224, 174),aquamarine, #87cbf5, #2988c4, #0398f5 );
+    /* background: linear-gradient(to right,aquamarine, rgb(93, 228, 243),rgb(51, 167, 167), #7fceff ); */
+    padding:22px;
+}
+td
+{
+    width:100%;
+}
+table 
+{
+    width:25%;  
+}
+.button
+{
+    width:139px;
+    height:35px;
+    background-color: rgb(164, 107, 148);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 39%;
+}
+.button:hover
+{
+    background-color: rgb(216, 3, 145);
+}
+select, input , textarea
+{
+    border:2px solid rgb(199, 249, 35) ;
+    border-radius: 12px;
+}
+.head
+{
+    width:144px;
+    height:29px;
+    font-weight: 52px;
+    color:rgb(133, 2, 255);
+    text-decoration:overline;
+    text-decoration: underline;
+    font-size: 34px;
+}
+.head1
+{
+    width:264px;
+    height:29px;
+    font-weight: 52px;
+    color:rgb(200, 49, 7);
+    text-decoration: underline wavy burlywood;
+    font-size: 24px;
+
+}

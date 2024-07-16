@@ -1,0 +1,578 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <style>
+        .main
+        {
+            min-width:760px;
+            height:100%;
+        }
+        .header
+        {
+            width:2525px;
+            height:75px;
+            border:1px solid white;
+            background-color: #F8F9FE;
+            display:flex; 
+        }
+        .sub
+        {
+            width: 665px;px;
+            height:95;
+            background-color: white;
+            position:absolute;
+            left:1070px;  
+            display:flex;
+            justify-content: center;
+            justify-content: space-between;
+            
+        }
+        .preview
+        {
+            width:110px;
+            height:69px;
+            background-color:green;
+            color:white;
+            font-size: 25px;
+            padding:4px;  
+            justify-content: center;
+            align-items: center;
+            display:flex; 
+            border-radius: 6px;
+            
+        }
+        .html
+        {
+            width:110px;
+            height:69px;
+            background-color:skyblue;
+            font-size: 25px;
+            color:white;
+            padding:4px;  
+            justify-content: center;
+            align-items: center;
+            
+            /* position:relative; */
+            display:flex;
+            border-radius: 6px;
+        }
+        .css
+        {
+            width:110px;
+            height:69px;
+            background-color:skyblue;
+            font-size: 25px;
+            color:white;
+            padding:4px;  
+            justify-content: center;
+            align-items: center;
+            /* position:relative; */
+            display:flex;
+            border-radius: 6px;
+        }
+        .download
+        {
+            width:139px;
+            height:69px;
+            background-color:skyblue;
+            font-size: 25px;
+            color:white;
+            padding:4px;  
+            align-items: center;
+            justify-content: center;
+            /* position:relative; */
+            display:flex;
+            border-radius: 6px;
+        }
+        .actions
+        {
+            width:110px;
+            height:69px;
+            background-color:red;
+            font-size: 25px;
+            color:white;
+            padding:4px;  
+            align-items: center;
+            justify-content: center;
+            /* position:relative; */
+            display:flex;
+            border-radius: 6px;
+        }
+        .profile
+        {
+            width:950px;
+            height:1380px;
+            border: 2px solid black;
+            position:absolute;
+            top:150px;
+            left:80px;
+        }
+        .bio
+        {
+            width:1300px;
+            height:730px;
+            border:2px solid black;
+            /* box-shadow: 12px 12px 60px 10px solid pink ; */
+            position:absolute;
+            top:150px;
+            left:1150px;
+        }
+        .project
+        {
+            width:1300px;
+            height:880px;
+            border:2px solid black;
+            /* box-shadow: 2px 2px 40px 10px solid silver ; */
+            background-color: #FFFFFF;
+            position:absolute;
+            top:960px;
+            left:1150px;
+        }
+        .name
+        {
+            color:black;
+            font-size: 55px;
+            position:relative;
+            top:19px;
+        }
+        .web
+        {
+            width:898px;
+            height:120px;
+            /* border:2px solid black; */
+            position:absolute;
+            font-size: 35px;
+            /* /* top:890px; */
+            left:12px; 
+
+        }
+        .webs
+        {
+            width:898px;
+            height:120px;
+            /* border:2px solid black; */
+            position:absolute;
+            font-size: 35px;
+            top: 210px;
+            left:12px; 
+
+        }
+        .one
+        {
+            width:898px;
+            height:120px;
+            /* border:2px solid black; */
+            position:absolute;
+            font-size: 35px;
+            top: 370px;
+            left:12px; 
+
+        }
+        .mob
+        {
+            width:898px;
+            height:120px;
+            /* border:2px solid black; */
+            position:absolute;
+            font-size: 35px;
+            top: 510px;
+            left:12px; 
+
+        }
+        .bac
+        {
+            width:898px;
+            height:120px;
+            /* border:2px solid black; */
+            position:absolute;
+            font-size: 35px;
+            top: 650px;
+            left:12px; 
+
+        }
+        .line
+        {
+            width:1075px;
+            height:12px;
+            border-radius: 5PX;
+            border:2px solid black;
+            position:absolute;
+        }
+        .line1
+        {
+            width:789px;
+            height:12px;
+            background-color: blue;
+            position:absolute;
+        }
+        .line2
+        {
+            width:559px;
+            height:12px;
+            background-color: red;
+            position:absolute;
+        }
+        .line3
+        {
+            width:889px;
+            height:12px;
+            background-color: green;
+            position:absolute;
+        }
+        .line4
+        {
+            width:459px;
+            height:12px;
+            background-color: yellow;
+            position:absolute;
+        }
+        .line5
+        {
+            width:859px;
+            height:12px;
+            background-color: #1C9DB3;
+            position:absolute;
+        }
+        .full
+        {
+            /* width:99px;
+            height:112px; */
+            color:black;
+            position:absolute;
+            font-size:35px;
+            top:65px;
+            left:22px;
+        }
+        .email
+        {
+            color:black;
+            position:absolute;
+            font-size:35px;
+            top:165px;
+            left:22px;
+        }
+        .phone
+        {
+            color:black;
+            position:absolute;
+            font-size:35px;
+            top:265px;
+            left:22px;
+        }
+        .mobile
+        {
+            color:black;
+            position:absolute;
+            font-size:35px;
+            top:365px;
+            left:22px;
+        }
+        .address
+        {
+            color:black;
+            position:absolute;
+            font-size:35px;
+            top:465px;
+            left:22px;
+        }
+        .save
+        {
+            width: 260px;
+            height:59px;
+            background-color:blue;
+            color:white;
+            font-size: 44px;
+            padding:4px;  
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            top:565px;
+            left: 424px;
+            border-radius: 10px;
+        }
+        .in
+        {
+            width:1004px;
+            height:49px;
+            border:2px solid black;
+            position:relative;
+            top: -41px;
+            left:265px;
+            font-size: 123px;;
+            /* background-color: #1C9DB3; */
+        }
+        .in1
+        {
+            width:1004px;
+            height:49px;
+            border:2px solid black;
+            position:relative;
+            top: -41px;
+            left:265px;
+            font-size: 123px;;
+            /* background-color: #1C9DB3; */
+        }
+        .in2
+        {
+            width:1004px;
+            height:49px;
+            border:2px solid black;
+            position:relative;
+            top: -41px;
+            left:265px;
+            font-size: 123px;;
+            /* background-color: #1C9DB3; */
+        }
+        .in3
+        {
+            width:1004px;
+            height:49px;
+            border:2px solid black;
+            position:relative;
+            top: -41px;
+            left:265px;
+            font-size: 123px;;
+            /* background-color: #1C9DB3; */
+        }
+        .in4
+        {
+            width:1004px;
+            height:49px;
+            border:2px solid black;
+            position:relative;
+            top: -41px;
+            left:265px;
+            font-size: 123px;;
+            /* background-color: #1C9DB3; */
+        }
+        .ab
+        {
+            width:1004;
+            height:49px;
+            font-size: 25px;
+        }
+        .img
+        {
+            width:423px;
+            height:423px;
+            background-image: url("./images/Pictures/gill.png");
+            background-size: 100% 100%;
+            border-radius: 425px;
+            border:5px solid blue;
+            display:flex;
+            position: relative;
+            top:96px;
+            left:226px;
+        }
+        .data
+        {
+            font-size:52px;
+            position:relative;
+            top:106px;
+            left:289px;
+
+        }
+        .inf
+        {
+            font-size:25px;
+            position:relative;
+            top:92px;
+            left:314px; 
+        }
+        .inf1
+        {
+            font-size:25px;
+            position:relative;
+            top:86px;
+            left:254px; 
+        }
+        .follow
+        {
+            width:129px;
+            height:69px;
+            background-color: blue;
+            color:#F8F9FE;
+            font-size: 22px;
+            border-radius: 8px;
+            display:flex;
+            padding:4px; 
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            top:79px;
+            left:298px;
+        }
+        .message
+        {
+            width:129px;
+            height:69px;
+            background-color: white;
+            color:blue;
+            font-size: 22px;
+            border:2px solid blue;
+            border-radius: 8px;
+            display:flex;
+            padding:4px; 
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            top:0px;
+            left:478px;
+        }
+        .t 
+        {
+            /* width:921px;
+            height:49px; */
+            font-size:42px;
+            /* box-shadow:2px 2px 4px 2px black; */
+            color:black;
+            left:25px;
+            position:absolute;
+            top:850px;
+            left:123px;
+        }
+        .t1 
+        {
+            /* width:921px;
+            height:49px; */
+            /* box-shadow:2px 2px 4px 2px black; */
+            font-size:42px;
+            color:black;
+            /* background-image: url("images/Pictures/image8.webp"); */
+            background-size:100% 100%;
+            /* border-radius: 23px; */
+            position:absolute;
+            top:950px;
+            left:123px;
+        }
+        .t2 
+        {
+            font-size:42px;
+            color:black;
+            /* background-image: url("images/Pictures/image9.png"); */
+            background-size:100% 100%;
+            border-radius: 23px;
+            position:absolute;
+            top:1050px;
+            left:123px;
+        }
+        .t3
+        {
+            font-size:42px;
+            color:black;
+            /* background-image: url("images/Pictures/image10.png"); */
+            background-size:100% 100%;
+            border-radius: 23px;
+            position:absolute;
+            top:1150px;
+            left:123px;
+        }
+        .t4 
+        {
+            font-size:42px;
+            color:black;
+            /* background-image: url("images/Pictures/image11.png"); */
+            background-size:100% 100%;
+            border-radius: 23px;
+            position:absolute;
+            top:1250px; 
+            left:123px;
+        }
+        .xy
+        {
+            width:298px;
+            height:45px;
+            position:absolute;
+            top:-5px;
+            left:394px
+
+        }
+        .i1 
+        {
+            background-image: url("images/Pictures/image6.png");
+            background-size:100% 100%;
+            border-radius: 23px;
+            border:2px black;
+            position: absolute;
+            left:22px
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="sub">
+            <div class="preview">PREVIEW</div>
+            <div class="html">HTML</div>
+            <div class="css">CSS</div>
+            <div class="download">DOWNLOAD</div>
+            <div class="actions">ACTIONS</div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="img"></div>
+            <div class="data"><b>JOHN GILL</b></div>
+            <div class="inf"><p>Full Stack Developer</p></div>
+            <div class="inf1"><p>Bay Area San Francics United States C.A</p></div>
+            <div class="follow">FOLLOW</div>
+            <div class="message">Message</div>
+            <div class="t"><i class="fa-solid fa-globe"></i>Website
+                <div class="i1"></div>
+                <div class ="xy">https://john.com</div>
+            </div>
+            <div class="t1"><i class="fa-brands fa-github"></i>Github
+                
+            <div class ="xy">johndoe</div>
+            </div>
+            <div class="t2"><i class="fa-brands fa-twitter"></i>Twitter
+                <div class ="xy">johndoe</div>
+            </div>
+            <div class="t3"><i class="fa-brands fa-instagram"></i>Instagram
+                <div class ="xy">johndoe</div>
+            </div>
+            <div class="t4"><i class="fa-brands fa-facebook"></i>Facebook
+                <div class ="xy">johndoe</div>
+            </div>
+        </div>
+        <div class="bio">
+            <div class="full"><B><label>FULL NAME</label></B>
+                <div class="in"><input type="text" placeholder="John Doe" class="ab"></div></div>
+            <div class="email"><B><label>EMAIL</label></B>
+                <div class="in1"><input type="text" placeholder="john123@gmail.com" class="ab"></div></div>
+            <div class="phone"><B><label>PHONE</label></B>
+                <div class="in2"><input type="NUMBER" placeholder="(203)89-9876" class="ab"></div></div>
+            <div class="mobile"><B><LABEL>MOBILE</LABEL></B>
+                <div class="in3"><input type="NUMBER" placeholder="(306)2345-2345" class="ab"></div></div>
+            <div class="address"><B><LABEL>ADDRESS</LABEL></B>
+                <div class="in4"><input type="text" placeholder="Bay Area San Francics U.S" class="ab"></div></div>
+            <div class="save">Save Changes</div>
+        </div>
+        <div class="project">
+            <div class="name"><b>PROJECT STATUS</b></div>
+            <div class="web">
+                <p>Web Design</p>
+                <div class ="line"></div>
+                <div class="line1"></div>
+            </div>
+            <div class="webs">
+                <p>Website Markup</p>
+                <div class ="line"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="one">
+                <p>One Page</p>
+                <div class ="line"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="mob">
+                <p>Mobile Template</p>
+                <div class ="line"></div>
+                <div class="line4"></div>
+            </div>
+            <div class="bac">
+                <p>Backend API</p>
+                <div class ="line"></div>
+                <div class="line5"></div>
+            </div>
+        </div>
+    </body>
+</html>

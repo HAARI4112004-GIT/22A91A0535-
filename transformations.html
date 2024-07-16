@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            .box
+            {
+                width:145px;
+                height:455px;
+                background-color: cornflowerblue;
+                /* transform: rotate(15deg); */
+                /* transform: rotateX(180deg); */
+                /* transform: skew(122deg); */
+                /* transform: skewX(12deg); */
+                /* transform: skewY(39deg); */
+                /* transform: translate(122px,22px); */
+                perspective: 100px;
+                position:relative;
+            }
+            .box1 
+            {
+                width:145px;
+                height:55px;
+                background-color: crimson;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform:rotateX(42deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box1">TRANSFORM</div></div>
+    </body>
+</html>

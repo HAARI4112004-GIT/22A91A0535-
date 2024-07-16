@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <style>
+            .b1
+            {
+                width:156px;
+                height:77px;
+                border-radius: 24px;
+                font-size: 22px;
+                background-color: palevioletred;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+                transition: all 2s;
+                z-index: 44444;
+            }
+            .b1:hover 
+            {
+                color:maroon;
+            }
+            .b1::after
+            {
+                content: "";
+                width:156px;
+                height:77px;
+                border-radius: 24px;
+                background-image: url("images/Pictures/dots.jpeg");
+                background-size: 100% 100%;
+                position: absolute;
+                top:0px;
+                left:234px;
+                transition: all 2s;
+                z-index: -44444;
+            }
+            .b1:hover::after
+            {
+                left:0px;
+            }
+            .b2 
+            {
+                width:156px;
+                height:77px;
+                border-radius: 24px;
+                font-size: 22px;
+                background-color: rgb(8, 248, 248);
+                text-align: center;
+                position: relative;
+                top:123px;
+                transition: all 2s;
+                overflow: hidden;
+            }
+            .b2:hover 
+            {
+                color:transparent;
+            }
+            .b2::after
+            {
+                content:"HELLO!";
+                width:156px;
+                height:77px;
+                font-size: 0px;
+                color: rgb(248, 4, 85);
+                /* background-image: url("images/Pictures/emoji.png"); */
+                background-size: 100% 100%;
+                position: absolute;
+                /* top:0px; */
+                left:0px;
+                transition: all 2s;
+            }
+            .b2:hover::after 
+            {
+                font-size: 22px;
+                
+            }
+            .b3 
+            {
+                width:377px;
+                height:377px;
+                border-radius: 224px;
+                font-size: 22px;
+                background-image: url("images/Pictures/cry.jpeg");
+                background-size: 100% 100%;
+                text-align: center;
+                position: relative;
+                top:223px; 
+                transition:all 5s;
+                overflow: hidden;
+            }
+            .b3:hover
+            {
+                background-image: url("images/Pictures/smile.jpeg");
+            }
+            .b3::after
+            {
+                content: "";
+                width:56px;
+                height:77px;
+                border-radius: 24px;
+                font-size: 22px;
+                position: absolute;
+                top:-122px;
+                left:222px;
+                background-image: url("images/Pictures/cake.jpeg"); 
+                background-size: 100% 100%;
+                transition:all 1s;
+            }
+            .b3:hover::after
+            {
+                top:175px;
+                left:216px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <center><button class="b1"><B>CLICK ME</B></button><br></center>
+        <center><button class="b2"><b>TAP ON ME</b></button></center>
+        <center><button class="b3"><b>TAP  TAP !!</b></button></center>
+    </body>
+</html>

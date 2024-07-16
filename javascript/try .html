@@ -1,0 +1,24 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        try {
+            {
+                var x = window.prompt("enter:");
+            }
+            if (typeof x !== Number) {
+                throw { name: "value error", message: "try again" };
+            }
+        }
+        catch (err) {
+            console.log(err.name);
+        }
+        finally {
+            console.log("done");
+        }
+    </script>
+</body>
+
+</html>

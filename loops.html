@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            var p=parseInt(window.prompt("enter"));
+            var q=parseInt(window.prompt("enter"));
+            
+            for (let k=p;k<q;k++ )
+            {
+            let x=0
+            for (let i=2; i<Math.sqrt(k);i++)
+            {
+                if(k%i==0)
+                {
+                    x+=1;
+                }
+            }
+            if(x==0)
+            {
+                document.write(k+"<br>");
+            }
+            // else
+            // {
+            //     document.write("Not prime"); 
+            // }
+        }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
